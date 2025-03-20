@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
 Player Fields 
 */
     [SerializeField]
-    private float moveSpeed, rotationSpeed;//floats representing speed to move by
+    private float moveSpeed, rotationSpeed, groundDrag;//floats representing speed to move by
 
     [SerializeField]
     private InputAction forwardMovement, sideMovement;
@@ -49,11 +49,12 @@ Player Fields
         if(sideInput != 0f)
              transform.Rotate(new Vector3(0, sideInput * 1, 0) * Time.fixedDeltaTime * rotationSpeed, Space.World);
 
-        
+        SpeedControl();
+         rb.linearDamping = groundDrag; 
     }
 
     void Update(){
-        SpeedControl();
+        
     }
 
 //Helps reduce slippery movement
