@@ -4,7 +4,8 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
 
-
+    [SerializeField]
+    private Animator animator;
     private Vector3 rotate;//Stores x + y vector to rotate by
 
 /*
@@ -40,6 +41,8 @@ Player Fields
         //Gets value of key presses for side and forward movement
         float sideInput = sideMovement.ReadValue<float>();
         float forwardInput = forwardMovement.ReadValue<float>();
+
+        animator.SetFloat("WalkValue", forwardInput);
 
 //Allows the player to move forward and backward with W and S, regardless of rotation
         Vector3 moveDirection = transform.forward * forwardInput + transform.right * sideInput; 
