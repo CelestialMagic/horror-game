@@ -878,6 +878,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 786180832374447450, guid: e6618fcbef49e46e9b617f8eb662264d, type: 3}
+      propertyPath: rotationSpeed
+      value: 180
+      objectReference: {fileID: 0}
     - target: {fileID: 1033154081184310579, guid: e6618fcbef49e46e9b617f8eb662264d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.98
