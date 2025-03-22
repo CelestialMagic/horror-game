@@ -43,6 +43,7 @@ Player Fields
         float forwardInput = forwardMovement.ReadValue<float>();
 
         animator.SetFloat("WalkValue", forwardInput);
+        animator.SetFloat("TurnValue", sideInput);
 
 //Allows the player to move forward and backward with W and S, regardless of rotation
         Vector3 moveDirection = transform.forward * forwardInput + transform.right * sideInput; 
