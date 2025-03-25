@@ -25,8 +25,12 @@ public class SkeletonAI : MonoBehaviour
             agent.SetDestination(player.position);
             animator.SetBool("IsPursuing", true);
 
-        }else
+        }else{
+
+            agent.SetDestination(transform.position);
             animator.SetBool("IsPursuing", false);
+        }
+            
         
     }
 }
