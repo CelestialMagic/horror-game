@@ -11,10 +11,11 @@ public class CameraTrigger : MonoBehaviour
     public void OnTriggerEnter(Collider other){
         if(other.gameObject.tag == "Player"){
             CameraManager.SetCurrentCamera(selfCamera, cameraObject);
-            
         }
             
 
     }
+
+    
 
 }
