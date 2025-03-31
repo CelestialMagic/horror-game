@@ -100,6 +100,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: CharacterWithWeapons
       objectReference: {fileID: 0}
+    - target: {fileID: 2378475223821744054, guid: e26685682b3da42759fef7f13bba461a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.00261
+      objectReference: {fileID: 0}
+    - target: {fileID: 2378475223821744054, guid: e26685682b3da42759fef7f13bba461a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.01161
+      objectReference: {fileID: 0}
+    - target: {fileID: 2378475223821744054, guid: e26685682b3da42759fef7f13bba461a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.00037
+      objectReference: {fileID: 0}
     - target: {fileID: 5667865900507822539, guid: e26685682b3da42759fef7f13bba461a, type: 3}
       propertyPath: m_IsActive
       value: 0
